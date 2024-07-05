@@ -1,0 +1,123 @@
+.contact {
+    /* background-color: blueviolet; */
+    margin-left: 6rem;
+    margin-right: 4rem;
+    max-width: 1080px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    /* margin-top: 4rem; */
+}
+
+.Scontainer {
+    max-height: 1000px;
+    min-height: 500px;
+}
+
+.contact_container {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(1, 1fr);
+    /* background-color: aqua;    */
+}
+
+.sTitle {
+    transform: translateY(8rem);
+    margin-left: -1rem;
+
+}
+.contact_info {
+    /* background-color: aquamarine; */
+    margin-top: 5rem;
+}
+
+.contact_title {
+    font-size: var(--h3-font-size);
+    margin-bottom: 0.5rem;
+}
+
+.contact_form-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.5rem;
+    background-color: var(--body-color);
+    box-shadow: var(--shadow);
+    border-radius: var(--border-radius);
+}
+
+/* .contact_form-div {
+    position: relative;
+    margin-bottom: 1.875rem;
+    height: 3.75rem;
+} */
+
+.contact_form-input {
+    margin: 5px;
+    background-color: var(--body-color);
+    outline: none;
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    height: 3rem;
+    border: none;
+    margin-left: 2rem;
+    padding: 1rem;
+    flex-shrink: 0;
+    /* margin-bottom: -2rem; */
+}
+
+textarea {
+    height: 8rem;
+    border-radius: var(--border-radius);
+    background-color: var(--body-color);
+    outline: none;
+    text-decoration: none;
+    resize: none;
+    border: none;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    box-shadow: var(--shadow);
+    padding: 1rem;
+}
+
+.contact_btn {
+    margin-top: 2rem;
+    width: 20rem;
+    margin-left: 5rem;
+    margin-bottom: 1rem;
+}
+
+/* =========================responsive =============================*/
+@media screen and (max-width: 726px) {
+    .contact_form-group {
+        grid-template-columns: repeat(1, 1fr);
+        min-width: 500px;
+
+    }
+
+    .contact_form-input {
+        margin-right: 2rem;
+        margin-top: 2rem;
+    }
+
+    .contact_btn {
+        max-width: 200px;
+    }
+
+    textarea {
+        margin-right: 2rem;
+    }
+
+    .contact_info {
+        transform: translateX(5rem);
+    }
+
+}
+
+@media  screen and (max-width: 770px) {
+    .contact_info {
+        transform: translateX(5rem);
+    }
+}
